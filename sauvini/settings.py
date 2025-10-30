@@ -156,7 +156,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
-STATIC_URL = 'static/'
+# When using S3 for static files, serve via custom domain if provided
+STATIC_URL = os.getenv('STATIC_URL', f"https://{os.getenv('AWS_S3_CUSTOM_DOMAIN', 'localhost:9000')}/")
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
@@ -215,21 +216,32 @@ SIMPLE_JWT = {
 }
 
 # CORS Configuration
-CORS_ALLOWED_ORIGINS = [
+_default_cors = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
     "http://localhost:3001",
     "http://127.0.0.1:3001",
-    # Add your production domains here
-    # "https://yourdomain.com",
-    # "https://www.yourdomain.com",
 ]
+_env_cors = [o for o in os.getenv('CORS_ALLOWED_ORIGINS', '').split(',') if o]
+CORS_ALLOWED_ORIGINS = _env_cors if _env_cors else _default_cors
 
 CORS_ALLOW_CREDENTIALS = True
 
-# Production CORS settings (uncomment for production)
-# CORS_ALLOWED_ORIGINS = os.getenv('CORS_ALLOWED_ORIGINS', '').split(',')
-# CORS_ALLOW_ALL_ORIGINS = False  # Never set to True in production
+# CSRF trusted origins (must include scheme)
+_env_csrf = [o for o in os.getenv('CSRF_TRUSTED_ORIGINS', '').split(',') if o]
+CSRF_TRUSTED_ORIGINS = _env_csrf if _env_csrf else [
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+]
+
+# Security hardening for production (toggle via env)
+SESSION_COOKIE_SECURE = os.getenv('SESSION_COOKIE_SECURE', 'True' if not DEBUG else 'False').lower() == 'true'
+CSRF_COOKIE_SECURE = os.getenv('CSRF_COOKIE_SECURE', 'True' if not DEBUG else 'False').lower() == 'true'
+SECURE_SSL_REDIRECT = os.getenv('SECURE_SSL_REDIRECT', 'True' if not DEBUG else 'False').lower() == 'true'
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https') if os.getenv('USE_PROXY_SSL_HEADER', 'True').lower() == 'true' else None
+SECURE_HSTS_SECONDS = int(os.getenv('SECURE_HSTS_SECONDS', '31536000' if not DEBUG else '0'))
+SECURE_HSTS_INCLUDE_SUBDOMAINS = os.getenv('SECURE_HSTS_INCLUDE_SUBDOMAINS', 'True').lower() == 'true'
+SECURE_HSTS_PRELOAD = os.getenv('SECURE_HSTS_PRELOAD', 'True').lower() == 'true'
 
 # Email Configuration
 EMAIL_BACKEND = os.getenv('EMAIL_BACKEND', 'django.core.mail.backends.smtp.EmailBackend')

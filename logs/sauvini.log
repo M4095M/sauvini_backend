@@ -16984,3 +16984,10 @@ INFO 2025-10-30 03:13:40,698 autoreload 4300 8710332160 /Users/MAC/Code/sauvini/
 INFO 2025-10-30 03:13:41,387 autoreload 4299 8710332160 /Users/MAC/Code/sauvini/sauvini_backend_django/apps/lives/views.py changed, reloading.
 INFO 2025-10-30 03:13:41,898 autoreload 6833 8710332160 Watching for file changes with StatReloader
 INFO 2025-10-30 03:13:42,267 autoreload 6850 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 04:10:06,984 autoreload 79189 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 04:10:35,467 autoreload 79775 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 04:11:12,799 autoreload 80526 8710332160 Watching for file changes with StatReloader
+WARNING 2025-10-30 04:14:57,462 log 80526 6249951232 Bad Request: /api/v1/auth/student/login
+WARNING 2025-10-30 04:14:57,765 log 80526 6249951232 Bad Request: /api/v1/auth/professor/login
+WARNING 2025-10-30 04:14:58,102 log 80526 6249951232 Bad Request: /api/v1/auth/admin/login
+WARNING 2025-10-30 04:15:02,495 log 80526 6249951232 Bad Request: /api/v1/auth/student/login
