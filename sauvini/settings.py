@@ -14,6 +14,7 @@ import os
 import sys
 from pathlib import Path
 from dotenv import load_dotenv
+from urllib.parse import urlparse
 
 # Load environment variables from .env file
 load_dotenv()
@@ -102,16 +103,44 @@ WSGI_APPLICATION = 'sauvini.wsgi.application'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 # PostgreSQL Database Configuration
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('DB_NAME', 'sauvini_db'),
-        'USER': os.getenv('DB_USER', 'sauvini_user'),
-        'PASSWORD': os.getenv('DB_PASSWORD', 'sauvini_password'),
-        'HOST': os.getenv('DB_HOST', 'localhost'),
-        'PORT': os.getenv('DB_PORT', '5432'),
+# Supports either individual DB_* envs or a single DATABASE_URL
+_database_url = os.getenv('DATABASE_URL', '').strip()
+if _database_url:
+    parsed = urlparse(_database_url)
+    # Handle postgres scheme variations
+    if parsed.scheme in ('postgres', 'postgresql'):
+        db_engine = 'django.db.backends.postgresql'
+    else:
+        db_engine = 'django.db.backends.postgresql'
+
+    _db_options = {}
+    # Enable SSL by default for non-local hosts (Render/Cloud providers)
+    if (parsed.hostname and parsed.hostname not in (None, 'localhost', '127.0.0.1')) or os.getenv('DB_SSL_REQUIRE', 'True').lower() == 'true':
+        _db_options['sslmode'] = 'require'
+
+    DATABASES = {
+        'default': {
+            'ENGINE': db_engine,
+            'NAME': (parsed.path or '').lstrip('/') or os.getenv('DB_NAME', 'sauvini_db'),
+            'USER': parsed.username or os.getenv('DB_USER', 'sauvini_user'),
+            'PASSWORD': parsed.password or os.getenv('DB_PASSWORD', 'sauvini_password'),
+            'HOST': parsed.hostname or os.getenv('DB_HOST', 'localhost'),
+            'PORT': str(parsed.port or os.getenv('DB_PORT', '5432')),
+            'OPTIONS': _db_options,
+        }
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': os.getenv('DB_NAME', 'sauvini_db'),
+            'USER': os.getenv('DB_USER', 'sauvini_user'),
+            'PASSWORD': os.getenv('DB_PASSWORD', 'sauvini_password'),
+            'HOST': os.getenv('DB_HOST', 'localhost'),
+            'PORT': os.getenv('DB_PORT', '5432'),
+            'OPTIONS': ({'sslmode': 'require'} if os.getenv('DB_SSL_REQUIRE', 'False').lower() == 'true' else {}),
+        }
+    }
 
 # SQLite fallback (commented out)
 # DATABASES = {
