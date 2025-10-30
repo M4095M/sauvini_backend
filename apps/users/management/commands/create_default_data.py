@@ -14,8 +14,8 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         # Create default admin user
-        admin_email = 'frihaouimohamed@gmail.com'
-        admin_password = '07vk640xz'
+        admin_email = 'admin@sauvini.com'
+        admin_password = 'Admin123!'
         
         try:
             admin_user = User.objects.get(email=admin_email)

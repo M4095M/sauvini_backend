@@ -118,6 +118,17 @@ class EmailService:
     @staticmethod
     def send_verification_email(user_email, verification_code, user_name, user_type='student'):
         """Send email verification email with 6-digit code"""
+        # Validate email configuration before attempting to send
+        if not settings.DEFAULT_FROM_EMAIL:
+            error_msg = "Email configuration error: DEFAULT_FROM_EMAIL is not set"
+            logger.error(error_msg)
+            raise ValueError(error_msg)
+        
+        if not settings.EMAIL_HOST_USER or not settings.EMAIL_HOST_PASSWORD:
+            error_msg = "Email configuration error: EMAIL_HOST_USER or EMAIL_HOST_PASSWORD is not set"
+            logger.error(error_msg)
+            raise ValueError(error_msg)
+        
         try:
             subject = 'Please confirm your email'
             
@@ -136,9 +147,13 @@ class EmailService:
             
             logger.info(f"Verification email sent to {user_email}")
             return True
+        except ValueError:
+            # Re-raise configuration errors
+            raise
         except Exception as e:
-            logger.error(f"Failed to send verification email to {user_email}: {e}")
-            return False
+            error_msg = f"Failed to send verification email to {user_email}: {e}"
+            logger.error(error_msg, exc_info=True)
+            raise Exception(error_msg) from e
     
     @staticmethod
     def send_password_reset_email(user_email, reset_token, user_type='student'):

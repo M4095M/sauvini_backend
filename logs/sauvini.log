@@ -17019,3 +17019,142 @@ INFO 2025-10-30 20:49:24,988 autoreload 87417 8710332160 /Users/MAC/Code/sauvini
 INFO 2025-10-30 20:49:25,042 autoreload 87418 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/sauvini/settings.py changed, reloading.
 INFO 2025-10-30 20:49:25,259 autoreload 87571 8710332160 Watching for file changes with StatReloader
 INFO 2025-10-30 20:49:25,284 autoreload 87572 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 20:55:57,422 autoreload 95334 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 21:09:58,446 autoreload 87572 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/sauvini/settings.py changed, reloading.
+INFO 2025-10-30 21:09:58,820 autoreload 12177 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 21:09:58,898 autoreload 95334 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/sauvini/settings.py changed, reloading.
+INFO 2025-10-30 21:09:59,169 autoreload 12194 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 21:10:14,113 autoreload 12194 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/sauvini/settings.py changed, reloading.
+INFO 2025-10-30 21:10:14,386 autoreload 12491 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 21:10:14,629 autoreload 12177 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/sauvini/settings.py changed, reloading.
+INFO 2025-10-30 21:10:14,913 autoreload 12508 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 21:26:18,693 autoreload 12491 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/sauvini/settings.py changed, reloading.
+INFO 2025-10-30 21:26:19,080 autoreload 31469 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 21:26:19,130 autoreload 12508 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/sauvini/settings.py changed, reloading.
+INFO 2025-10-30 21:26:19,387 autoreload 31486 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 22:45:20,311 autoreload 58320 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 22:45:30,152 autoreload 58517 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 22:45:48,084 autoreload 58896 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:18:59,868 autoreload 58896 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/sauvini/settings.py changed, reloading.
+INFO 2025-10-30 23:19:00,000 autoreload 31486 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/sauvini/settings.py changed, reloading.
+INFO 2025-10-30 23:19:00,525 autoreload 99048 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:19:00,525 autoreload 99051 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:19:02,853 autoreload 99051 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/sauvini/settings.py changed, reloading.
+INFO 2025-10-30 23:19:02,883 autoreload 99048 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/sauvini/settings.py changed, reloading.
+INFO 2025-10-30 23:19:03,171 autoreload 99120 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:19:03,195 autoreload 99121 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:19:34,858 autoreload 99121 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/apps/authentication/views.py changed, reloading.
+INFO 2025-10-30 23:19:35,376 autoreload 99120 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/apps/authentication/views.py changed, reloading.
+INFO 2025-10-30 23:19:35,517 autoreload 99792 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:19:35,659 autoreload 99793 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:19:50,299 autoreload 99793 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/sauvini/settings.py changed, reloading.
+INFO 2025-10-30 23:19:50,376 autoreload 99792 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/sauvini/settings.py changed, reloading.
+INFO 2025-10-30 23:19:50,666 autoreload 227 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:19:50,666 autoreload 228 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:21:42,749 autoreload 228 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/core/email.py changed, reloading.
+INFO 2025-10-30 23:21:43,222 autoreload 2655 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:21:43,306 autoreload 227 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/core/email.py changed, reloading.
+INFO 2025-10-30 23:21:43,579 autoreload 2672 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:22:10,614 autoreload 2672 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/apps/authentication/views.py changed, reloading.
+INFO 2025-10-30 23:22:10,614 autoreload 2655 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/apps/authentication/views.py changed, reloading.
+INFO 2025-10-30 23:22:10,981 autoreload 3233 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:22:10,981 autoreload 3232 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:22:32,077 autoreload 3233 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/apps/authentication/views.py changed, reloading.
+INFO 2025-10-30 23:22:32,570 autoreload 3660 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:22:32,831 autoreload 3232 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/apps/authentication/views.py changed, reloading.
+INFO 2025-10-30 23:22:33,061 autoreload 3681 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:22:40,149 autoreload 3660 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/core/email.py changed, reloading.
+INFO 2025-10-30 23:22:40,404 autoreload 3835 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:22:40,480 autoreload 3681 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/core/email.py changed, reloading.
+INFO 2025-10-30 23:22:40,713 autoreload 3837 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:36:11,318 autoreload 3837 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/core/email.py changed, reloading.
+INFO 2025-10-30 23:36:11,515 autoreload 3835 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/core/email.py changed, reloading.
+INFO 2025-10-30 23:36:11,739 autoreload 16250 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:36:11,786 autoreload 16251 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:36:17,178 autoreload 16250 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/core/email.py changed, reloading.
+INFO 2025-10-30 23:36:17,232 autoreload 16251 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/core/email.py changed, reloading.
+INFO 2025-10-30 23:36:17,424 autoreload 16375 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:36:17,485 autoreload 16376 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:36:30,036 autoreload 16375 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/apps/authentication/views.py changed, reloading.
+INFO 2025-10-30 23:36:30,225 autoreload 16376 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/apps/authentication/views.py changed, reloading.
+INFO 2025-10-30 23:36:30,407 autoreload 16655 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:36:30,537 autoreload 16656 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:36:34,811 autoreload 16655 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/apps/authentication/views.py changed, reloading.
+INFO 2025-10-30 23:36:34,928 autoreload 16656 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/apps/authentication/views.py changed, reloading.
+INFO 2025-10-30 23:36:35,204 autoreload 16760 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:36:35,241 autoreload 16761 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:36:41,667 autoreload 16760 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/apps/authentication/views.py changed, reloading.
+INFO 2025-10-30 23:36:41,723 autoreload 16761 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/apps/authentication/views.py changed, reloading.
+INFO 2025-10-30 23:36:41,928 autoreload 16896 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:36:41,989 autoreload 16897 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:36:46,312 autoreload 16896 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/apps/authentication/views.py changed, reloading.
+INFO 2025-10-30 23:36:46,394 autoreload 16897 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/apps/authentication/views.py changed, reloading.
+INFO 2025-10-30 23:36:46,578 autoreload 16988 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:36:46,669 autoreload 17005 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:36:47,882 autoreload 16988 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/apps/authentication/views.py changed, reloading.
+INFO 2025-10-30 23:36:47,965 autoreload 17005 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/sauvini/settings.py changed, reloading.
+INFO 2025-10-30 23:36:48,211 autoreload 17026 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:36:48,254 autoreload 17045 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:39:17,644 autoreload 17026 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/apps/authentication/views.py changed, reloading.
+INFO 2025-10-30 23:39:17,706 autoreload 17045 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/apps/authentication/views.py changed, reloading.
+INFO 2025-10-30 23:39:18,042 autoreload 20046 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:39:18,042 autoreload 20045 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:46:54,368 email 20046 6197522432 Verification email sent to mohamedmorsli2004@gmail.com
+INFO 2025-10-30 23:49:38,919 autoreload 20045 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/apps/authentication/views.py changed, reloading.
+INFO 2025-10-30 23:49:39,545 autoreload 32743 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:49:39,632 autoreload 20046 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/apps/authentication/views.py changed, reloading.
+INFO 2025-10-30 23:49:39,923 autoreload 32760 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:49:47,144 autoreload 32743 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/apps/authentication/views.py changed, reloading.
+INFO 2025-10-30 23:49:47,444 autoreload 32760 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/apps/authentication/views.py changed, reloading.
+INFO 2025-10-30 23:49:47,506 autoreload 32915 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:49:47,748 autoreload 32916 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:49:49,035 autoreload 32916 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/apps/authentication/views.py changed, reloading.
+INFO 2025-10-30 23:49:49,303 autoreload 32951 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:49:49,847 autoreload 32915 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/apps/authentication/views.py changed, reloading.
+INFO 2025-10-30 23:49:50,103 autoreload 32970 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:50:04,847 autoreload 32970 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/apps/authentication/views.py changed, reloading.
+INFO 2025-10-30 23:50:05,192 autoreload 32951 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/apps/authentication/views.py changed, reloading.
+INFO 2025-10-30 23:50:05,311 autoreload 33268 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:50:05,483 autoreload 33285 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:50:10,747 autoreload 33268 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/apps/authentication/authentication.py changed, reloading.
+INFO 2025-10-30 23:50:10,932 autoreload 33285 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/apps/authentication/authentication.py changed, reloading.
+INFO 2025-10-30 23:50:11,013 autoreload 33407 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:50:11,223 autoreload 33408 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:50:12,494 autoreload 33408 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/apps/authentication/authentication.py changed, reloading.
+INFO 2025-10-30 23:50:12,824 autoreload 33445 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:50:13,362 autoreload 33407 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/apps/authentication/authentication.py changed, reloading.
+INFO 2025-10-30 23:50:13,694 autoreload 33471 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:50:17,271 autoreload 33445 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/apps/courses/views.py changed, reloading.
+INFO 2025-10-30 23:50:17,581 autoreload 33555 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:50:18,078 autoreload 33471 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/apps/courses/views.py changed, reloading.
+INFO 2025-10-30 23:50:18,312 autoreload 33573 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:50:22,642 autoreload 33573 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/apps/courses/views.py changed, reloading.
+INFO 2025-10-30 23:50:23,166 autoreload 33681 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:50:23,260 autoreload 33555 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/apps/courses/views.py changed, reloading.
+INFO 2025-10-30 23:50:23,521 autoreload 33699 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:50:26,888 autoreload 33699 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/apps/courses/views.py changed, reloading.
+INFO 2025-10-30 23:50:27,163 autoreload 33770 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:50:27,522 autoreload 33681 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/apps/courses/views.py changed, reloading.
+INFO 2025-10-30 23:50:27,768 autoreload 33788 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:50:30,210 autoreload 33788 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/apps/courses/views.py changed, reloading.
+INFO 2025-10-30 23:50:30,498 autoreload 33842 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:50:30,548 autoreload 33770 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/apps/courses/views.py changed, reloading.
+INFO 2025-10-30 23:50:30,811 autoreload 33859 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:50:33,127 autoreload 33859 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/apps/progress/views.py changed, reloading.
+INFO 2025-10-30 23:50:33,385 autoreload 33911 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:50:33,817 autoreload 33842 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/apps/progress/views.py changed, reloading.
+INFO 2025-10-30 23:50:34,051 autoreload 33930 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:50:35,368 autoreload 33930 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/apps/progress/views.py changed, reloading.
+INFO 2025-10-30 23:50:35,645 autoreload 33954 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:50:35,720 autoreload 33911 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/apps/progress/views.py changed, reloading.
+INFO 2025-10-30 23:50:36,022 autoreload 33972 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:50:36,962 autoreload 33954 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/apps/progress/views.py changed, reloading.
+INFO 2025-10-30 23:50:37,196 autoreload 33991 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:50:40,428 autoreload 33972 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/apps/authentication/views.py changed, reloading.
+INFO 2025-10-30 23:50:40,537 autoreload 33991 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/apps/progress/views.py changed, reloading.
+INFO 2025-10-30 23:50:40,701 autoreload 34078 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:50:40,772 autoreload 34079 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:50:43,022 autoreload 34078 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/apps/authentication/authentication.py changed, reloading.
+INFO 2025-10-30 23:50:43,065 autoreload 34079 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/apps/progress/views.py changed, reloading.
+INFO 2025-10-30 23:50:43,322 autoreload 34132 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-30 23:50:43,332 autoreload 34133 8710332160 Watching for file changes with StatReloader

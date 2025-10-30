@@ -251,17 +251,33 @@ _default_cors = [
     "http://localhost:3001",
     "http://127.0.0.1:3001",
 ]
-_env_cors = [o for o in os.getenv('CORS_ALLOWED_ORIGINS', '').split(',') if o]
-CORS_ALLOWED_ORIGINS = _env_cors if _env_cors else _default_cors
+
+# Add production frontend URL if provided via environment
+_prod_frontend = os.getenv('FRONTEND_URL', '').strip()
+if _prod_frontend and _prod_frontend not in _default_cors:
+    _default_cors.append(_prod_frontend)
+
+# Parse CORS_ALLOWED_ORIGINS from environment (comma-separated)
+_env_cors_str = os.getenv('CORS_ALLOWED_ORIGINS', '').strip()
+if _env_cors_str:
+    _env_cors = [o.strip() for o in _env_cors_str.split(',') if o.strip()]
+    CORS_ALLOWED_ORIGINS = _env_cors
+else:
+    CORS_ALLOWED_ORIGINS = _default_cors
 
 CORS_ALLOW_CREDENTIALS = True
 
+# Allow-all CORS (use ONLY for debugging; override via env)
+CORS_ALLOW_ALL_ORIGINS = os.getenv('CORS_ALLOW_ALL_ORIGINS', 'False').lower() == 'true'
+
 # CSRF trusted origins (must include scheme)
-_env_csrf = [o for o in os.getenv('CSRF_TRUSTED_ORIGINS', '').split(',') if o]
-CSRF_TRUSTED_ORIGINS = _env_csrf if _env_csrf else [
-    "http://localhost:3000",
-    "http://127.0.0.1:3000",
-]
+_env_csrf_str = os.getenv('CSRF_TRUSTED_ORIGINS', '').strip()
+if _env_csrf_str:
+    _env_csrf = [o.strip() for o in _env_csrf_str.split(',') if o.strip()]
+    CSRF_TRUSTED_ORIGINS = _env_csrf
+else:
+    # Default to same as CORS origins for CSRF
+    CSRF_TRUSTED_ORIGINS = CORS_ALLOWED_ORIGINS[:]  # Copy list
 
 # Security hardening for production (toggle via env)
 SESSION_COOKIE_SECURE = os.getenv('SESSION_COOKIE_SECURE', 'True' if not DEBUG else 'False').lower() == 'true'

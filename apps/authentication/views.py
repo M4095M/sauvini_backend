@@ -337,6 +337,11 @@ def send_verification_email(request):
     print(f"   User type: {user_type}")
     print(f"   Request data: {request.data}")
     
+    if not email:
+        return Response({
+            'error': 'Email is required'
+        }, status=status.HTTP_400_BAD_REQUEST)
+    
     try:
         user = User.objects.get(email=email)
         print(f"   User found: {user.email}")
@@ -353,8 +358,27 @@ def send_verification_email(request):
         print(f"   Token created: {token_obj.token}")
         print(f"   User name: {user_name}")
         
-        result = EmailService.send_verification_email(user.email, token_obj.token, user_name, user_type)
-        print(f"   Email service result: {result}")
+        try:
+            result = EmailService.send_verification_email(user.email, token_obj.token, user_name, user_type)
+            print(f"   Email service result: {result}")
+        except ValueError as e:
+            # Email configuration error - this is a server misconfiguration
+            print(f"   ❌ Email configuration error: {str(e)}")
+            import traceback
+            traceback.print_exc()
+            return Response({
+                'error': 'Email service is not properly configured. Please contact support.',
+                'message': str(e)
+            }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        except Exception as e:
+            # Other email sending errors
+            print(f"   ❌ Error sending email: {str(e)}")
+            import traceback
+            traceback.print_exc()
+            return Response({
+                'error': 'Failed to send verification email. Please try again later.',
+                'message': 'An error occurred while sending the email.'
+            }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
         
         return Response({
             'message': 'Verification email sent successfully'
@@ -364,6 +388,13 @@ def send_verification_email(request):
         return Response({
             'error': 'User not found'
         }, status=status.HTTP_404_NOT_FOUND)
+    except Exception as e:
+        print(f"   ❌ Unexpected error: {str(e)}")
+        import traceback
+        traceback.print_exc()
+        return Response({
+            'error': 'An unexpected error occurred. Please try again later.'
+        }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 
 @api_view(['GET'])
