@@ -17158,3 +17158,64 @@ INFO 2025-10-30 23:50:43,022 autoreload 34078 8710332160 /Users/MAC/Code/sauvini
 INFO 2025-10-30 23:50:43,065 autoreload 34079 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/apps/progress/views.py changed, reloading.
 INFO 2025-10-30 23:50:43,322 autoreload 34132 8710332160 Watching for file changes with StatReloader
 INFO 2025-10-30 23:50:43,332 autoreload 34133 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-31 00:05:54,497 autoreload 34133 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/core/email.py changed, reloading.
+INFO 2025-10-31 00:05:54,516 autoreload 34132 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/core/email.py changed, reloading.
+INFO 2025-10-31 00:05:54,933 autoreload 52075 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-31 00:05:54,933 autoreload 52074 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-31 00:06:30,713 autoreload 52075 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/sauvini/settings.py changed, reloading.
+INFO 2025-10-31 00:06:31,097 autoreload 52074 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/sauvini/settings.py changed, reloading.
+INFO 2025-10-31 00:06:31,137 autoreload 52791 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-31 00:06:31,381 autoreload 52809 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-31 00:06:46,012 autoreload 52809 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/sauvini/settings.py changed, reloading.
+INFO 2025-10-31 00:06:46,012 autoreload 52791 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/core/email.py changed, reloading.
+INFO 2025-10-31 00:06:46,387 autoreload 53113 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-31 00:06:46,387 autoreload 53114 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-31 00:10:26,940 autoreload 53114 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/core/middleware.py changed, reloading.
+INFO 2025-10-31 00:10:27,218 autoreload 53113 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/core/email.py changed, reloading.
+INFO 2025-10-31 00:10:27,569 autoreload 57504 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-31 00:10:27,569 autoreload 57505 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-31 00:10:45,312 autoreload 57505 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/sauvini/settings.py changed, reloading.
+INFO 2025-10-31 00:10:45,546 autoreload 57504 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/sauvini/settings.py changed, reloading.
+INFO 2025-10-31 00:10:45,705 autoreload 57879 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-31 00:10:45,803 autoreload 57880 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-31 00:10:47,017 autoreload 57879 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/core/email.py changed, reloading.
+INFO 2025-10-31 00:10:47,109 autoreload 57880 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/core/email.py changed, reloading.
+INFO 2025-10-31 00:10:47,340 autoreload 57915 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-31 00:10:47,417 autoreload 57916 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-31 00:10:59,157 autoreload 57916 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/core/email.py changed, reloading.
+INFO 2025-10-31 00:10:59,572 autoreload 58155 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-31 00:10:59,951 autoreload 57915 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/core/email.py changed, reloading.
+INFO 2025-10-31 00:11:00,210 autoreload 58173 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-31 00:11:20,696 autoreload 58155 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/sauvini/settings.py changed, reloading.
+INFO 2025-10-31 00:11:20,914 autoreload 58173 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/sauvini/settings.py changed, reloading.
+INFO 2025-10-31 00:11:21,071 autoreload 58627 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-31 00:11:21,172 autoreload 58644 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-31 00:11:23,427 autoreload 58627 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/core/email.py changed, reloading.
+INFO 2025-10-31 00:11:23,475 autoreload 58644 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/core/email.py changed, reloading.
+INFO 2025-10-31 00:11:23,753 autoreload 58695 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-31 00:11:23,790 autoreload 58696 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-31 00:11:43,490 autoreload 58696 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/core/email.py changed, reloading.
+INFO 2025-10-31 00:11:43,783 autoreload 58695 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/core/email.py changed, reloading.
+INFO 2025-10-31 00:11:43,812 autoreload 59130 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-31 00:11:44,025 autoreload 59131 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-31 00:12:43,238 email 59131 6206009344 Verification email queued for mohamed_abdennour.morsli@g.enp.edu.dz
+ERROR 2025-10-31 00:12:43,248 email 59131 6222835712 Error sending email: send() got an unexpected keyword argument 'connection'
+Traceback (most recent call last):
+  File "/Users/MAC/Code/sauvini/sauvini_backend/core/email.py", line 125, in _send_email_sync
+    msg.send(connection=connection)
+TypeError: send() got an unexpected keyword argument 'connection'
+ERROR 2025-10-31 00:12:43,253 email 59131 6222835712 Failed to send verification email to mohamed_abdennour.morsli@g.enp.edu.dz: send() got an unexpected keyword argument 'connection'
+Traceback (most recent call last):
+  File "/Users/MAC/Code/sauvini/sauvini_backend/core/email.py", line 163, in send_in_thread
+    EmailService._send_email_sync(msg)
+  File "/Users/MAC/Code/sauvini/sauvini_backend/core/email.py", line 125, in _send_email_sync
+    msg.send(connection=connection)
+TypeError: send() got an unexpected keyword argument 'connection'
+INFO 2025-10-31 00:12:49,086 autoreload 59131 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/sauvini/settings.py changed, reloading.
+INFO 2025-10-31 00:12:49,126 autoreload 59130 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/core/email.py changed, reloading.
+INFO 2025-10-31 00:12:49,570 autoreload 60443 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-31 00:12:49,570 autoreload 60444 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-31 20:34:33,438 autoreload 68186 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-31 20:35:18,932 autoreload 69125 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-31 20:37:10,014 autoreload 71347 8710332160 Watching for file changes with StatReloader
+INFO 2025-10-31 20:42:16,830 autoreload 77359 8710332160 Watching for file changes with StatReloader

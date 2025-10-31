@@ -1,18 +1,22 @@
 import os
 import sys
 
-# Absolute path to this project's backend directory
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+# Path to your Django project (update if different)
+BASE_DIR = '/home/sauvini/repositories/sauvini_backend'
 
-# Ensure project root and apps are on PYTHONPATH
+# Add project directory to sys.path
 if BASE_DIR not in sys.path:
     sys.path.insert(0, BASE_DIR)
 
-# Point Django to the correct settings module
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "sauvini.settings")
+# Django settings module
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'sauvini.settings')
 
-from django.core.wsgi import get_wsgi_application  # noqa: E402
+# Activate virtual environment (if you created one)
+VENV_PATH = '/home/sauvini/virtualenv/sauvini_backend/3.13/bin/activate_this.py'
+if os.path.exists(VENV_PATH):
+    with open(VENV_PATH) as f:
+        exec(f.read(), {'__file__': VENV_PATH})
 
+# Get WSGI application
+from django.core.wsgi import get_wsgi_application
 application = get_wsgi_application()
-
-
