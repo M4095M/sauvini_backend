@@ -17289,3 +17289,10 @@ INFO 2025-11-02 07:47:03,228 autoreload 14694 8710332160 Watching for file chang
 INFO 2025-11-02 07:47:03,333 autoreload 14695 8710332160 Watching for file changes with StatReloader
 INFO 2025-11-02 07:47:27,311 autoreload 15172 8710332160 Watching for file changes with StatReloader
 INFO 2025-11-02 07:52:40,352 autoreload 21321 8710332160 Watching for file changes with StatReloader
+INFO 2025-11-02 07:56:34,583 autoreload 14694 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/sauvini/settings.py changed, reloading.
+INFO 2025-11-02 07:56:35,291 autoreload 26116 8710332160 Watching for file changes with StatReloader
+INFO 2025-11-02 07:56:44,976 autoreload 26116 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/sauvini/settings.py changed, reloading.
+INFO 2025-11-02 07:56:45,372 autoreload 26342 8710332160 Watching for file changes with StatReloader
+INFO 2025-11-02 07:57:15,461 autoreload 26342 8710332160 /Users/MAC/Code/sauvini/sauvini_backend/sauvini/settings.py changed, reloading.
+INFO 2025-11-02 07:57:15,833 autoreload 26960 8710332160 Watching for file changes with StatReloader
+INFO 2025-11-02 08:00:05,937 autoreload 30314 8710332160 Watching for file changes with StatReloader

@@ -136,6 +136,9 @@ if _database_url:
     _use_ssl = (parsed.hostname and parsed.hostname not in (None, 'localhost', '127.0.0.1')) or os.getenv('DB_SSL_REQUIRE', 'True').lower() == 'true'
     
     if parsed.scheme in ('mysql', 'mariadb'):
+        # MySQL charset options for UTF-8 support (utf8mb4 for full Unicode including emojis)
+        _db_options['charset'] = 'utf8mb4'
+        _db_options['init_command'] = "SET sql_mode='STRICT_TRANS_TABLES', character_set_client=utf8mb4, character_set_connection=utf8mb4, character_set_database=utf8mb4, character_set_results=utf8mb4, character_set_server=utf8mb4, collation_connection=utf8mb4_unicode_ci, collation_database=utf8mb4_unicode_ci, collation_server=utf8mb4_unicode_ci"
         # MySQL SSL options (works with both PyMySQL and mysqlclient)
         if _use_ssl:
             _db_options['ssl'] = {'mode': 'REQUIRED'}
