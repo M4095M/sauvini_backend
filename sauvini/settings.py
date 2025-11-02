@@ -318,8 +318,7 @@ SECURE_HSTS_INCLUDE_SUBDOMAINS = os.getenv('SECURE_HSTS_INCLUDE_SUBDOMAINS', 'Tr
 SECURE_HSTS_PRELOAD = os.getenv('SECURE_HSTS_PRELOAD', 'True').lower() == 'true'
 
 # Email Configuration
-# Use custom backend with timeout support to prevent worker timeout
-EMAIL_BACKEND = os.getenv('EMAIL_BACKEND', 'core.email_backend.TimeoutSMTPBackend')
+EMAIL_BACKEND = os.getenv('EMAIL_BACKEND', 'django.core.mail.backends.smtp.EmailBackend')
 EMAIL_HOST = os.getenv('EMAIL_HOST', 'smtp-relay.brevo.com')
 EMAIL_PORT = int(os.getenv('EMAIL_PORT', '587'))
 EMAIL_USE_TLS = os.getenv('EMAIL_USE_TLS', 'True').lower() == 'true'
@@ -327,10 +326,6 @@ EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER', '')
 EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD', '')
 DEFAULT_FROM_EMAIL = os.getenv('DEFAULT_FROM_EMAIL', '')
 FRONTEND_URL = os.getenv('FRONTEND_URL', 'http://localhost:3000')
-
-# Email connection timeout settings (prevent worker timeout)
-EMAIL_TIMEOUT = int(os.getenv('EMAIL_TIMEOUT', '10'))  # 10 seconds timeout
-EMAIL_CONNECTION_TIMEOUT = int(os.getenv('EMAIL_CONNECTION_TIMEOUT', '5'))  # 5 seconds connection timeout
 
 # MinIO/S3 Configuration
 AWS_ACCESS_KEY_ID = os.getenv('AWS_ACCESS_KEY_ID', 'minioadmin')

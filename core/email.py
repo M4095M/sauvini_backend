@@ -1,13 +1,12 @@
 """
 Email service utilities
 """
-from django.core.mail import send_mail, EmailMultiAlternatives, get_connection
+from django.core.mail import send_mail, EmailMultiAlternatives
 from django.template.loader import render_to_string
 from django.conf import settings
 import logging
 import random
 import string
-import threading
 
 logger = logging.getLogger(__name__)
 
@@ -117,64 +116,29 @@ class EmailService:
         """
     
     @staticmethod
-    def _send_email_sync(msg):
-        """Internal method to send email synchronously with timeout"""
+    def send_verification_email(user_email, verification_code, user_name, user_type='student'):
+        """Send email verification email with 6-digit code"""
         try:
-            # Use the custom backend which has timeout configured
-            connection = get_connection(fail_silently=False)
-            msg.send(connection=connection)
+            subject = 'Please confirm your email'
+            
+            # Generate HTML content
+            html_content = EmailService.generate_verification_email_html(user_name, verification_code)
+            
+            # Create email message
+            msg = EmailMultiAlternatives(
+                subject=subject,
+                body=f"Your verification code is: {verification_code}",
+                from_email=settings.DEFAULT_FROM_EMAIL,
+                to=[user_email],
+            )
+            msg.attach_alternative(html_content, "text/html")
+            msg.send()
+            
+            logger.info(f"Verification email sent to {user_email}")
             return True
         except Exception as e:
-            logger.error(f"Error sending email: {e}", exc_info=True)
-            raise
-
-    @staticmethod
-    def send_verification_email(user_email, verification_code, user_name, user_type='student'):
-        """Send email verification email with 6-digit code (async to prevent timeout)"""
-        # Validate email configuration before attempting to send
-        if not settings.DEFAULT_FROM_EMAIL:
-            error_msg = "Email configuration error: DEFAULT_FROM_EMAIL is not set"
-            logger.error(error_msg)
-            raise ValueError(error_msg)
-        
-        if not settings.EMAIL_HOST_USER or not settings.EMAIL_HOST_PASSWORD:
-            error_msg = "Email configuration error: EMAIL_HOST_USER or EMAIL_HOST_PASSWORD is not set"
-            logger.error(error_msg)
-            raise ValueError(error_msg)
-        
-        def send_in_thread():
-            """Send email in background thread to avoid blocking request"""
-            try:
-                subject = 'Please confirm your email'
-                
-                # Generate HTML content
-                html_content = EmailService.generate_verification_email_html(user_name, verification_code)
-                
-                # Create email message
-                msg = EmailMultiAlternatives(
-                    subject=subject,
-                    body=f"Your verification code is: {verification_code}",
-                    from_email=settings.DEFAULT_FROM_EMAIL,
-                    to=[user_email],
-                )
-                msg.attach_alternative(html_content, "text/html")
-                
-                # Send with timeout
-                EmailService._send_email_sync(msg)
-                
-                logger.info(f"Verification email sent to {user_email}")
-            except Exception as e:
-                error_msg = f"Failed to send verification email to {user_email}: {e}"
-                logger.error(error_msg, exc_info=True)
-                # Don't raise here - we've already returned to the user
-        
-        # Start email sending in background thread
-        thread = threading.Thread(target=send_in_thread, daemon=True)
-        thread.start()
-        
-        # Return immediately - email will be sent in background
-        logger.info(f"Verification email queued for {user_email}")
-        return True
+            logger.error(f"Failed to send verification email to {user_email}: {e}")
+            return False
     
     @staticmethod
     def send_password_reset_email(user_email, reset_token, user_type='student'):
